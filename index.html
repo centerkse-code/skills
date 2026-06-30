@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>KSE - Job Order Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 30px;
+      background-color: #f0f4f8;
+    }
+
+    h1 {
+      color: #1a3c6e;
+    }
+
+    .form-box {
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+      max-width: 500px;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 15px;
+    }
+
+    button {
+      margin-top: 20px;
+      background-color: #1a3c6e;
+      color: white;
+      padding: 10px 25px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🏭 KSE — ใบสั่งงาน (Job Order)</h1>
+
+  <div class="form-box">
+
+    <label>ชื่อลูกค้า</label>
+    <input type="text" placeholder="เช่น บริษัท ABC จำกัด">
+
+    <label>ชื่อชิ้นงาน</label>
+    <input type="text" placeholder="เช่น เพลากลึง 50mm">
+
+    <label>จำนวน (ชิ้น)</label>
+    <input type="number" placeholder="0">
+
+    <label>วันส่งงาน</label>
+    <input type="date">
+
+    <label>ผู้รับผิดชอบ</label>
+    <input type="text" placeholder="จักรชัย">
+
+    <label>สถานะ</label>
+    <select>
+      <option>รอดำเนินการ</option>
+      <option>กำลังผลิต</option>
+      <option>QA ตรวจสอบ</option>
+      <option>พร้อมส่ง</option>
+    </select>
+
+    <button>บันทึก Job Order</button>
+
+  </div>
+
+</body>
+</html>
